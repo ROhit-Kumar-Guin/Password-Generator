@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+</head>
+
+<body>
+    <div class="navigationBar">
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/25/12/ca/2512ca4b-4c2e-64a3-1789-bb5431052215/source/512x512bb.jpg"alt="logo">
+        <h1 class="webName">Password Generator</h1>
+        <nav class="navContent">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <span class="display">
+            <input type="text" class="password" disabled id="passDisplay">
+            <span class="material-symbols-outlined" id="copyIcon">
+                content_copy
+            </span>
+        </span>
+        <div class="pass-indicator"></div>
+        <input type="range" name="passLength"  min="1" max="30" value="15" id="passLength">
+        <div class="passLen">
+            <p class="passwordLength">Password Length : </p>
+            <span id="passLengthValue"></span>
+        </div>
+        <div class="modification">
+            <p class="passModificationTital">Password modification</p>
+            <ul>
+                <li>
+                    <input type="checkbox" name="lowercase" class="lowercase" id="lowercase" checked>
+                    <label for="lowercase" class="property">Lowercase (a-z)</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Uppercase" class="Uppercase" id="Uppercase" >
+                    <label class="property" for="Uppercase">Uppercase (A-Z)</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="Numbers" class="Numbers" id="Numbers" >
+                    <label for="Numbers" class="property">Numbers (0-9)</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Spaces" class="Spaces" id="Spaces" >
+                    <label for="Spaces" class="property">Spaces (_)</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Symbols" class="Symbols" id="Symbols" >
+                    <label for="Symbols" class="property">Symbols (!@#$)</label>
+                </li>
+            </ul>
+        </div>
+        <div class="generate">
+            <input type="button" value=" Generate Password " id="generatePassword" class="generatePassword">
+        </div>
+    </div>
+    <script src="index.js
+    "></script>
+</body>
+
+</html>

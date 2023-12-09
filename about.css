@@ -1,0 +1,14 @@
+.about{
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: #e2d1f9;
+    width: 50vw;
+    height: 69vh;
+    margin: 10vh auto;
+    box-shadow: 10px 10px 60px #ec00fd58, inset -10px -10px 60px #ffffff40;
+}
+.aboutContent{
+    font-family: 'Aclonica';
+    font-size: 25px;
+    padding: 20px;
+}
